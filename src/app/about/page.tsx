@@ -1,12 +1,29 @@
-import React from 'react'
+import React from "react";
+import MyButton from "../components/MyButton";
 
 const page = () => {
   return (
-    <div className='p-6'>
-        <p className='text-xl font-bold mb-4'>About Me</p>
-        <p className='text-sm'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur impedit nulla mollitia voluptas veritatis? Aliquid dicta ipsum earum reprehenderit optio accusantium maxime molestias repellat? Ea veritatis dolore dicta sequi doloribus, iure tenetur ratione vitae, amet fugiat rerum. Magni, libero? Aperiam non, sapiente illo, cum similique repellendus sequi veritatis minima accusamus, voluptate ex. Cum optio ullam distinctio sint illum non ratione labore quia, eaque dignissimos aperiam consequatur accusamus cumque? Voluptatum eum dolorum facere aliquam. Nam doloribus recusandae enim fugit deserunt ratione id maxime. Qui culpa minus quam maiores porro, nihil vel. Temporibus nobis consectetur voluptatem. Repudiandae commodi pariatur placeat necessitatibus in laboriosam dolores ullam sit quisquam. Rem expedita voluptate dicta iure magni! Est laudantium distinctio, nemo esse hic, vel voluptatibus, nisi id dolore in unde ea maxime numquam assumenda ullam accusamus excepturi sapiente necessitatibus soluta ratione rerum temporibus quo! Deserunt voluptatum accusamus porro ad officiis consequuntur fugit, illo sunt dolor reprehenderit quo accusantium hic temporibus quia molestiae nihil, id totam excepturi non. Similique accusamus libero saepe fuga possimus facilis, sapiente unde rem, placeat praesentium corporis, nemo voluptatum voluptate labore doloremque modi nobis eaque ducimus. Aliquid esse id, molestias eum ipsum consectetur ea aut perferendis dolor quam amet voluptas odit, nam rerum illum laboriosam obcaecati voluptates corporis rem ipsa enim natus. Omnis similique dignissimos, quia voluptates, dicta velit nesciunt ipsa deleniti suscipit repellendus exercitationem nihil perspiciatis cum ad unde voluptas totam voluptatem laboriosam? Expedita, maiores nostrum. Similique in rem et quaerat consectetur nihil ut repellendus neque saepe? Aliquam quo optio, cum unde eius nesciunt, labore quaerat impedit qui neque vero earum laboriosam recusandae vitae soluta quam, quia id libero dignissimos. Pariatur voluptas, maxime vitae, doloremque sint nulla ea officia vero neque, optio non iste illo beatae! Enim harum eum eaque vel mollitia, iure excepturi voluptatibus. Aliquam accusantium facilis atque dignissimos suscipit in.</p>
+    <div className="p-6">
+      <p className="text-xl font-bold mb-4">About Me</p>
+      <p>
+        I'm a passionate MERN stack developer with a flair for crafting
+        remarkable web experiences. My journey into the world of coding began
+        with a fascination for technology and a drive to create innovative
+        solutions. Armed with Next.js and React, I wield the power of these
+        frameworks to breathe life into captivating frontends that leave users
+        in awe. As a lover of organized data, SQL databases are my trusty
+        companions, helping me tame the chaos and maintain seamless operations.
+        But I don't just stop there – I make sure my creations shine with the
+        elegance of Tailwind CSS, turning designs into elegant realities. When
+        I'm not weaving code, you can find me immersed in a world of music,
+        exploring nature's wonders, or enjoying thought-provoking books. I
+        believe in the power of continuous learning and constantly seek new
+        challenges to sharpen my skills and expand my horizons. Join me on this
+        extraordinary journey of transforming ideas into reality, one line of
+        code at a time. Let's build something incredible together!
+      </p>
     </div>
-  )
-}
+  );
+};
 
-export default page
+export default page;
