@@ -2,16 +2,14 @@
 
 import React, { createContext, useState } from "react";
 
-// type themeType = "dark" | "light";
-interface themeType {
-  theme: string;
-  updateTheme: (x: string) => void;
+type theme = "dark" | "light" | string;
+
+export interface themeType {
+  theme: theme;
+  updateTheme: () => void;
 }
 
-export const ThemeContext = createContext<themeType | null>({
-  theme: "",
-  updateTheme: (x: string) => {},
-});
+export const ThemeContext = createContext<themeType | null>(null);
 
 export const ThemeContextProvider = ({
   children,
@@ -19,8 +17,8 @@ export const ThemeContextProvider = ({
   children: React.ReactNode;
 }) => {
   const [theme, setTheme] = useState("light");
-  const updateTheme = (x: string) => {
-    setTheme(x);
+  const updateTheme = () => {
+    setTheme(theme === "dark" ? "light" : "dark");
   };
   return (
     <ThemeContext.Provider value={{ theme, updateTheme }}>

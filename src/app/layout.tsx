@@ -7,6 +7,7 @@ import { ThemeContextProvider } from "@/context/ThemeContext";
 import NameContextProvider from "@/context/NameContext";
 import Footer from "./components/Footer";
 
+
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
@@ -24,11 +25,13 @@ export default function RootLayout({
       <body
         className={`${inter.className}relative bg-[#201d1d] text-white max-w-7xl m-auto`}
       >
-        <NameContextProvider>
-          <Navbar />
-          <ThemeContextProvider>{children}</ThemeContextProvider>
-          <Footer />
-        </NameContextProvider>
+        <ThemeContextProvider>
+          <NameContextProvider>
+            <Navbar />
+            {children}
+            <Footer />
+          </NameContextProvider>
+        </ThemeContextProvider>
       </body>
     </html>
   );
