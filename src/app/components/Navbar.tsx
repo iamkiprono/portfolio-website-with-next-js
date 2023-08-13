@@ -1,48 +1,81 @@
 "use client";
 import useTheme from "@/Hooks/useTheme";
-import NameContextProvider, {
-  ContextProps,
-  NameContext,
-} from "@/context/NameContext";
-import { themeType } from "@/context/ThemeContext";
+
 import Link from "next/link";
-import React, { useContext } from "react";
-import { FaMoon, FaSun } from "react-icons/fa";
+import React, { useState } from "react";
+import { FaMoon, FaSun, FaBars, FaTimes } from "react-icons/fa";
+import MyButton from "./MyLibrary/MyButton";
 
 const Navbar = () => {
-  const { user, updateUser } = useContext<ContextProps>(NameContext);
+  const [navOpen, setNavOpen] = useState(false);
 
   const { theme, updateTheme } = useTheme();
   return (
     <div>
       <div className="flex justify-between items-center p-6">
-        <Link className="border border-red-800 px-4 py-2 rounded" href={"/"}>
-          Collins
+        <Link className="" href={"/"}>
+          <MyButton title="Collins" />
         </Link>
-        <div className="flex items-center">
-          <Link className="ml-4" href={"/"}>
-            Home
-          </Link>
-          <Link className="ml-4" href={"about"}>
+        <div
+          className={`flex flex-col md:flex-row justify-center md:visible ${
+            navOpen ? "visible" : "invisible"
+          }`}
+        >
+          {
+            <div className="md:invisible">
+              <FaTimes size={24} onClick={() => setNavOpen(!navOpen)} />
+            </div>
+          }
+
+          <Link
+            onClick={() => setNavOpen(!navOpen)}
+            className="md:ml-4"
+            href={"about"}
+          >
             About
           </Link>
-          <Link className="ml-4" href={"skills"}>
+          <Link
+            onClick={() => setNavOpen(!navOpen)}
+            className="md:ml-4"
+            href={"skills"}
+          >
             Skills
           </Link>
-          <Link className="ml-4 mr-4" href={"contact"}>
+          <Link
+            onClick={() => setNavOpen(!navOpen)}
+            className="md:ml-4"
+            href={"projects"}
+          >
+            Projects
+          </Link>
+          <Link
+            onClick={() => setNavOpen(!navOpen)}
+            className="md:ml-4 md:mr-4"
+            href={"contact"}
+          >
             Contact
           </Link>
-          {theme === "light" ? (
-            <FaSun
-              onClick={() => {
-            
-                updateTheme();
-              }}
-            />
-          ) : (
-            <FaMoon onClick={() => updateTheme()} />
-          )}
         </div>
+        {
+          <div
+            onClick={() => setNavOpen(!navOpen)}
+            className={`md:invisible md:absolute ${
+              navOpen ? "absolute invisible" : ""
+            }`}
+          >
+            <FaBars size={24} />
+          </div>
+        }
+        {theme === "light" ? (
+          <FaSun
+            size={24}
+            onClick={() => {
+              updateTheme();
+            }}
+          />
+        ) : (
+          <FaMoon size={24} onClick={() => updateTheme()} />
+        )}
       </div>
     </div>
   );

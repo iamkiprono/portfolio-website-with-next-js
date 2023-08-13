@@ -25,6 +25,7 @@ export default function RootLayout({
       <body
         className={`${inter.className}relative bg-[#201d1d] text-white max-w-7xl m-auto`}
       >
+        
         <ThemeContextProvider>
           <NameContextProvider>
             <Navbar />
