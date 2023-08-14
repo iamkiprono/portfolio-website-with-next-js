@@ -28,27 +28,30 @@ export const Projects = [
       "Context API",
       "API integration",
       "UI/UX Design",
-
-      "Deployment and App Store Optimization",
     ],
     link: "http://fulltime-360.netlify.app/",
   },
   {
-    projectName: "ZaoKart",
+    projectName: "ZaoKart Mobile App",
     projectType: "Cross platform mobile applicaion",
     projectDescription:
-      "I designed and developed a dynamic mobile application using React Native Expo and NativeWind for a prominent real estate enterprise. This comprehensive app provides a seamless platform for users to explore both completed and ongoing apartment projects. Prospective investors can conveniently reserve units directly through the app, streamlining the investment process. Additionally, the application offers current investors the ability to access and review their transaction history, enhancing transparency and user engagement. Through a combination of intuitive design and efficient functionality, this app simplifies real estate transactions and fosters an enhanced experience for both potential and existing investors.",
+      "I have developed a comprehensive full stack application using React Native with Expo and NativeWind for the frontend, while utilizing MongoDB, Node.js, and Express for the backend. This innovative app caters to urban dwellers by providing a secure platform to conveniently order and receive fresh farm produce. By integrating a streamlined ordering process and establishing pickup stations within the city, I have effectively bridged the gap between rural farming and urban consumption, enhancing access to fresh produce for urban residents.",
     tech: [
       "React Native",
       "Expo",
       "NativeWind",
-      "JavaScript",
-      "Context API",
-      "API integration",
-      "UI/UX Design",
-
-      "Deployment and App Store Optimization",
+      "MongoDB",
+      "Node.js",
+      "Express",
     ],
+    link: "http://fulltime-360.netlify.app/",
+  },
+  {
+    projectName: "ZaoKart Website",
+    projectType: "Website",
+    projectDescription:
+      "I've designed and developed a dynamic web application using React that brings the same innovative concept to life. Through this platform, urban residents can securely order and receive fresh farm produce, while pickup stations strategically located within the city ensure seamless delivery. By leveraging React's powerful capabilities, I've created an intuitive and user-friendly interface that simplifies the ordering process. This web application harmonizes the convenience of online shopping with the satisfaction of accessing farm-fresh produce, enhancing urban dwellers' connection to locally sourced goods.",
+    tech: ["React", "MongoDB", "Node.js", "Express"],
     link: "http://fulltime-360.netlify.app/",
   },
 ];

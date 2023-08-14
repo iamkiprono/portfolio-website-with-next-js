@@ -66,7 +66,7 @@ const Navbar = () => {
             <FaBars size={24} />
           </div>
         }
-        {theme === "light" ? (
+        {theme === "dark" ? (
           <FaSun
             size={24}
             onClick={() => {

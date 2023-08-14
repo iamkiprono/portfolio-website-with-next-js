@@ -2,11 +2,11 @@ import "./globals.css";
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import Navbar from "./components/Navbar";
-import { darkTheme, lightTheme } from "@/utils/theme";
-import { ThemeContextProvider } from "@/context/ThemeContext";
-import NameContextProvider from "@/context/NameContext";
-import Footer from "./components/Footer";
 
+import { ThemeContextProvider } from "@/context/ThemeContext";
+
+import Footer from "./components/Footer";
+import ThemeComponent from "./components/ThemeComponent";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -22,16 +22,13 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body
-        className={`${inter.className}relative bg-[#201d1d] text-white max-w-7xl m-auto`}
-      >
-        
+      <body>
         <ThemeContextProvider>
-          <NameContextProvider>
+          <ThemeComponent>
             <Navbar />
             {children}
             <Footer />
-          </NameContextProvider>
+          </ThemeComponent>
         </ThemeContextProvider>
       </body>
     </html>
