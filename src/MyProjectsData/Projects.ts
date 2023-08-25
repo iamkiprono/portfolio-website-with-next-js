@@ -15,6 +15,7 @@ export const Projects = [
       "Presenting a dynamic football news platform created using React, React Router DOM, Node.js, and MongoDB. This project seamlessly integrates user authentication, granting administrators exclusive access to manage content. Leveraging the power of Tailwind CSS for an appealing visual design, the platform offers a real-time feed of football news, updates on the latest transfers, and live match links. The user-friendly interface empowers administrators to effortlessly add and remove news articles, ensuring the freshest content for football enthusiasts. Explore this project to witness a harmonious blend of technology and passion for the beautiful game.",
     tech: ["React", "React Router DOM", "Node.js", "MongoDB", "Tailwind CSS"],
     link: "http://fulltime-360.netlify.app/",
+    projectImage:"/nayvy.jpg"
   },
   {
     projectName: "Tsavo",
@@ -31,6 +32,7 @@ export const Projects = [
       "UI/UX Design",
     ],
     link: "http://fulltime-360.netlify.app/",
+    projectImage:"/nayvy.jpg"
   },
   {
     projectName: "ZaoKart Mobile App",
@@ -46,6 +48,7 @@ export const Projects = [
       "Express",
     ],
     link: "http://fulltime-360.netlify.app/",
+    projectImage:"/nayvy.jpg"
   },
   {
     projectName: "ZaoKart Website",
@@ -54,5 +57,6 @@ export const Projects = [
       "I've designed and developed a dynamic web application using React that brings the same innovative concept to life. Through this platform, urban residents can securely order and receive fresh farm produce, while pickup stations strategically located within the city ensure seamless delivery. By leveraging React's powerful capabilities, I've created an intuitive and user-friendly interface that simplifies the ordering process. This web application harmonizes the convenience of online shopping with the satisfaction of accessing farm-fresh produce, enhancing urban dwellers' connection to locally sourced goods.",
     tech: ["React", "MongoDB", "Node.js", "Express"],
     link: "http://fulltime-360.netlify.app/",
+    projectImage:"/nayvy.jpg"
   },
 ];
