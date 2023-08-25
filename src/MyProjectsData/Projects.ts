@@ -6,6 +6,7 @@ export const Projects = [
       "Nayvy is a dynamic full-stack web application that empowers users to seamlessly buy and sell code snippets. Built with React, Node.js, and MongoDB, this platform provides a secure and user-friendly environment for developers to trade their code expertise. Inspired by a similar project (Nayvy.com), Nayvy integrates Tailwind CSS and Material UI for a polished and responsive design. Through its intuitive interface and robust backend, Nayvy facilitates the exchange of code knowledge, fostering a thriving community of developers.",
     tech: ["React", "Node.js", "MongoDB", "Tailwind CSS", "Material UI"],
     link: "https://nayvy-clone.vercel.app/",
+    projectImage:"/nayvy.jpg"
   },
   {
     projectName: "FullTime 360",

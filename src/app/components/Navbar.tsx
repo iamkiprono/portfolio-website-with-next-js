@@ -10,6 +10,8 @@ const Navbar = () => {
   const [navOpen, setNavOpen] = useState(false);
 
   const { theme, updateTheme } = useTheme();
+
+  
   return (
     <div>
       <div className="flex justify-between items-center p-6">
@@ -55,6 +57,23 @@ const Navbar = () => {
           >
             Contact
           </Link>
+          {theme === "dark" ? (
+            <FaSun
+              size={24}
+              onClick={() => {
+                window.localStorage.setItem("theme", JSON.stringify("light"));
+                updateTheme();
+              }}
+            />
+          ) : (
+            <FaMoon
+              size={24}
+              onClick={() => {
+                window.localStorage.setItem("theme", JSON.stringify("dark"));
+                updateTheme();
+              }}
+            />
+          )}
         </div>
         {
           <div
@@ -66,16 +85,6 @@ const Navbar = () => {
             <FaBars size={24} />
           </div>
         }
-        {theme === "dark" ? (
-          <FaSun
-            size={24}
-            onClick={() => {
-              updateTheme();
-            }}
-          />
-        ) : (
-          <FaMoon size={24} onClick={() => updateTheme()} />
-        )}
       </div>
     </div>
   );

@@ -1,6 +1,6 @@
 "use client";
 
-import React, { createContext, useState } from "react";
+import React, { createContext, useState, useEffect } from "react";
 
 type theme = "dark" | "light" | string;
 
@@ -16,10 +16,25 @@ export const ThemeContextProvider = ({
 }: {
   children: React.ReactNode;
 }) => {
-  const [theme, setTheme] = useState("light");
+  const [theme, setTheme] = useState("");
   const updateTheme = () => {
     setTheme(theme === "dark" ? "light" : "dark");
   };
+  useEffect(() => {
+    const currentTheme = window.localStorage.getItem("theme");
+
+    if (!currentTheme) {
+      console.log({ message: "no theme", currentTheme });
+      window.localStorage.setItem("theme", "light");
+      return setTheme("light");
+    }
+
+    console.log({
+      message: "theme available",
+      currentTheme: JSON.parse(currentTheme),
+    });
+    setTheme(JSON.parse(currentTheme) );
+  }, []);
   return (
     <ThemeContext.Provider value={{ theme, updateTheme }}>
       {children}

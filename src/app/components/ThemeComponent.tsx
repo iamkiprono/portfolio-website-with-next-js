@@ -7,14 +7,22 @@ import useTheme from "@/Hooks/useTheme";
 const inter = Inter({ subsets: ["latin"] });
 
 const ThemeComponent = ({ children }: { children: ReactNode }) => {
-  const { theme, updateTheme } = useTheme();
+  const { theme } = useTheme();
   return (
     <div
-      className={`${inter.className}relative ${
+      className={`${inter.className} ${
         theme === "dark" ? "bg-[#201d1d] text-white" : "text-[#201d1d] bg-white"
-      }   m-auto`}
+      } min-h-[100vh]   `}
     >
-      {children}
+      <div
+        className={`${inter.className} ${
+          theme === "dark"
+            ? "bg-[#201d1d] text-white"
+            : "text-[#201d1d] bg-white"
+        }   m-auto max-w-7xl mx-auto`}
+      >
+        {children}
+      </div>
     </div>
   );
 };

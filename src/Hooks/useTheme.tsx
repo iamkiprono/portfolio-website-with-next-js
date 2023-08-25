@@ -1,4 +1,3 @@
-import { NameContext } from "@/context/NameContext";
 import { ThemeContext, themeType } from "@/context/ThemeContext";
 import { useContext } from "react";
 
