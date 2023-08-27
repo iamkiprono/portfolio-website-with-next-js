@@ -14,7 +14,7 @@ const Navbar = () => {
   
   return (
     <div>
-      <div className="flex justify-between items-center p-6">
+      <div className="flex justify-between items-center p-6 gap-4">
         <Link className="" href={"/"}>
           <MyButton title="Collins" />
         </Link>

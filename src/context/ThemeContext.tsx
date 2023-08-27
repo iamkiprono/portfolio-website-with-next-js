@@ -25,7 +25,7 @@ export const ThemeContextProvider = ({
 
     if (!currentTheme) {
       console.log({ message: "no theme", currentTheme });
-      window.localStorage.setItem("theme", "light");
+      window.localStorage.setItem("theme", JSON.stringify("light") );
       return setTheme("light");
     }
 

@@ -12,16 +12,16 @@ export const Projects = [
     projectName: "FullTime 360",
     projectType: "Website",
     projectDescription:
-      "Presenting a dynamic football news platform created using React, React Router DOM, Node.js, and MongoDB. This project seamlessly integrates user authentication, granting administrators exclusive access to manage content. Leveraging the power of Tailwind CSS for an appealing visual design, the platform offers a real-time feed of football news, updates on the latest transfers, and live match links. The user-friendly interface empowers administrators to effortlessly add and remove news articles, ensuring the freshest content for football enthusiasts. Explore this project to witness a harmonious blend of technology and passion for the beautiful game.",
+      "Presenting a football news platform created using React, React Router DOM, Node.js, and MongoDB. This project seamlessly integrates user authentication, granting administrators exclusive access to manage content. Leveraging the power of Tailwind CSS for an appealing visual design, the platform offers a real-time feed of football news, updates on the latest transfers, and live match links. The user-friendly interface empowers administrators to effortlessly add and remove news articles, ensuring the freshest content for football enthusiasts. Explore this project to witness a harmonious blend of technology and passion for the beautiful game.",
     tech: ["React", "React Router DOM", "Node.js", "MongoDB", "Tailwind CSS"],
     link: "http://fulltime-360.netlify.app/",
-    projectImage:"/nayvy.jpg"
+    projectImage:"/360.JPG"
   },
   {
     projectName: "Tsavo",
     projectType: "Cross platform mobile applicaion",
     projectDescription:
-      "I designed and developed a dynamic mobile application using React Native Expo and NativeWind for a prominent real estate enterprise. This comprehensive app provides a seamless platform for users to explore both completed and ongoing apartment projects. Prospective investors can conveniently reserve units directly through the app, streamlining the investment process. Additionally, the application offers current investors the ability to access and review their transaction history, enhancing transparency and user engagement. Through a combination of intuitive design and efficient functionality, this app simplifies real estate transactions and fosters an enhanced experience for both potential and existing investors.",
+      "Designed and developed a mobile application using React Native Expo and NativeWind for a prominent real estate enterprise. This comprehensive app provides a seamless platform for users to explore both completed and ongoing apartment projects. Prospective investors can conveniently reserve units directly through the app, streamlining the investment process. Additionally, the application offers current investors the ability to access and review their transaction history, enhancing transparency and user engagement. Through a combination of intuitive design and efficient functionality, this app simplifies real estate transactions and fosters an enhanced experience for both potential and existing investors.",
     tech: [
       "React Native",
       "Expo",
@@ -31,14 +31,14 @@ export const Projects = [
       "API integration",
       "UI/UX Design",
     ],
-    link: "http://fulltime-360.netlify.app/",
-    projectImage:"/nayvy.jpg"
+    link: "https://expo.dev/artifacts/eas/qoWCWj3eVcfTpjH7uUdNEa.apk",
+    projectImage:"/tsavo.jpg"
   },
   {
     projectName: "ZaoKart Mobile App",
     projectType: "Cross platform mobile applicaion",
     projectDescription:
-      "I have developed a comprehensive full stack application using React Native with Expo and NativeWind for the frontend, while utilizing MongoDB, Node.js, and Express for the backend. This innovative app caters to urban dwellers by providing a secure platform to conveniently order and receive fresh farm produce. By integrating a streamlined ordering process and establishing pickup stations within the city, I have effectively bridged the gap between rural farming and urban consumption, enhancing access to fresh produce for urban residents.",
+      "Developed a comprehensive full stack application using React Native with Expo and NativeWind for the frontend, while utilizing MongoDB, Node.js, and Express for the backend. This innovative app caters to urban dwellers by providing a secure platform to conveniently order and receive fresh farm produce. By integrating a streamlined ordering process and establishing pickup stations within the city, I have effectively bridged the gap between rural farming and urban consumption, enhancing access to fresh produce for urban residents.",
     tech: [
       "React Native",
       "Expo",
@@ -48,15 +48,15 @@ export const Projects = [
       "Express",
     ],
     link: "http://fulltime-360.netlify.app/",
-    projectImage:"/nayvy.jpg"
+    projectImage:""
   },
   {
     projectName: "ZaoKart Website",
     projectType: "Website",
     projectDescription:
-      "I've designed and developed a dynamic web application using React that brings the same innovative concept to life. Through this platform, urban residents can securely order and receive fresh farm produce, while pickup stations strategically located within the city ensure seamless delivery. By leveraging React's powerful capabilities, I've created an intuitive and user-friendly interface that simplifies the ordering process. This web application harmonizes the convenience of online shopping with the satisfaction of accessing farm-fresh produce, enhancing urban dwellers' connection to locally sourced goods.",
+      "Designed and developed a dynamic web application using React that brings the same innovative concept to life. Through this platform, urban residents can securely order and receive fresh farm produce, while pickup stations strategically located within the city ensure seamless delivery. By leveraging React's powerful capabilities, I've created an intuitive and user-friendly interface that simplifies the ordering process. This web application harmonizes the convenience of online shopping with the satisfaction of accessing farm-fresh produce, enhancing urban dwellers' connection to locally sourced goods.",
     tech: ["React", "MongoDB", "Node.js", "Express"],
     link: "http://fulltime-360.netlify.app/",
-    projectImage:"/nayvy.jpg"
+    projectImage:""
   },
 ];
