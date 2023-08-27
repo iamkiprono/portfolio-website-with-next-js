@@ -14,7 +14,7 @@ export const Projects = [
     projectDescription:
       "Presenting a football news platform created using React, React Router DOM, Node.js, and MongoDB. This project seamlessly integrates user authentication, granting administrators exclusive access to manage content. Leveraging the power of Tailwind CSS for an appealing visual design, the platform offers a real-time feed of football news, updates on the latest transfers, and live match links. The user-friendly interface empowers administrators to effortlessly add and remove news articles, ensuring the freshest content for football enthusiasts. Explore this project to witness a harmonious blend of technology and passion for the beautiful game.",
     tech: ["React", "React Router DOM", "Node.js", "MongoDB", "Tailwind CSS"],
-    link: "http://fulltime-360.netlify.app/",
+    link: "http://fulltime-360.vercel.app/",
     projectImage:"/360.JPG"
   },
   {
