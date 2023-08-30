@@ -28,9 +28,9 @@ export const navLinks = [
 
 const Nav = () => {
   const [active, setActive] = useState("Home");
-  const [toggle, setToggle] = useState(false);
+  // const [toggle, setToggle] = useState(false);
 
-  const { theme, updateTheme } = useTheme();
+  const { theme, updateTheme, toggle, updateToggle } = useTheme();
 
   return (
     <div className="">
@@ -52,7 +52,8 @@ const Nav = () => {
               } ${index === navLinks.length - 1 ? "mr-0" : "mr-10"}`}
               onClick={() => {
                 setActive(nav.title);
-                setToggle(!toggle);
+                // setToggle(!toggle);
+                updateToggle();
               }}
             >
               <Link
@@ -71,7 +72,10 @@ const Nav = () => {
             // src={toggle ? close : menu}
             alt="menu"
             className="w-[28px] h-[28px] object-contain"
-            onClick={() => setToggle(!toggle)}
+            onClick={() => {
+              // setToggle(!toggle);
+              updateToggle();
+            }}
           />
 
           {/* Sidebar */}
@@ -91,7 +95,8 @@ const Nav = () => {
                   } ${index === navLinks.length - 1 ? "mb-0" : "mb-4"}`}
                   onClick={() => {
                     setActive(nav.title);
-                    setToggle(!toggle);
+                    // setToggle(!toggle);
+                    updateToggle();
                   }}
                   href={`/${nav.id}`}
                 >

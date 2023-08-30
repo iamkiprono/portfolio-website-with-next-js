@@ -7,9 +7,14 @@ import useTheme from "@/Hooks/useTheme";
 const inter = Inter({ subsets: ["latin"] });
 
 const ThemeComponent = ({ children }: { children: ReactNode }) => {
-  const { theme } = useTheme();
+  const { theme, updateToggle, toggle } = useTheme();
   return (
     <div
+      onClick={() => {
+        if (toggle) {
+          updateToggle();
+        }
+      }}
       className={`${inter.className} ${
         theme === "dark" ? "bg-[#201d1d] text-white" : "text-[#201d1d] bg-white"
       } min-h-[100vh]   `}

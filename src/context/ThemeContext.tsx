@@ -5,6 +5,8 @@ import React, { createContext, useState, useEffect } from "react";
 type theme = "dark" | "light" | string;
 
 export interface themeType {
+  toggle: boolean;
+  updateToggle: () => void;
   theme: theme;
   updateTheme: () => void;
 }
@@ -16,6 +18,12 @@ export const ThemeContextProvider = ({
 }: {
   children: React.ReactNode;
 }) => {
+  const [toggle, setToggle] = useState(false);
+
+  const updateToggle = () => {
+    setToggle(!toggle);
+  };
+
   const [theme, setTheme] = useState("");
   const updateTheme = () => {
     setTheme(theme === "dark" ? "light" : "dark");
@@ -24,19 +32,14 @@ export const ThemeContextProvider = ({
     const currentTheme = window.localStorage.getItem("theme");
 
     if (!currentTheme) {
-      console.log({ message: "no theme", currentTheme });
-      window.localStorage.setItem("theme", JSON.stringify("light") );
+      window.localStorage.setItem("theme", JSON.stringify("light"));
       return setTheme("light");
     }
 
-    console.log({
-      message: "theme available",
-      currentTheme: JSON.parse(currentTheme),
-    });
-    setTheme(JSON.parse(currentTheme) );
+    setTheme(JSON.parse(currentTheme));
   }, []);
   return (
-    <ThemeContext.Provider value={{ theme, updateTheme }}>
+    <ThemeContext.Provider value={{ theme, updateTheme, toggle, updateToggle }}>
       {children}
     </ThemeContext.Provider>
   );
