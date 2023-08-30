@@ -6,7 +6,7 @@ export const Projects = [
       "Nayvy is a dynamic full-stack web application that empowers users to seamlessly buy and sell code snippets. Built with React, Node.js, and MongoDB, this platform provides a secure and user-friendly environment for developers to trade their code expertise. Inspired by a similar project (Nayvy.com), Nayvy integrates Tailwind CSS and Material UI for a polished and responsive design. Through its intuitive interface and robust backend, Nayvy facilitates the exchange of code knowledge, fostering a thriving community of developers.",
     tech: ["React", "Node.js", "MongoDB", "Tailwind CSS", "Material UI"],
     link: "https://nayvy-clone.vercel.app/",
-    projectImage:"/nayvy.jpg"
+    projectImage: "/nayvy.jpg",
   },
   {
     projectName: "FullTime 360",
@@ -15,7 +15,7 @@ export const Projects = [
       "Presenting a football news platform created using React, React Router DOM, Node.js, and MongoDB. This project seamlessly integrates user authentication, granting administrators exclusive access to manage content. Leveraging the power of Tailwind CSS for an appealing visual design, the platform offers a real-time feed of football news, updates on the latest transfers, and live match links. The user-friendly interface empowers administrators to effortlessly add and remove news articles, ensuring the freshest content for football enthusiasts. Explore this project to witness a harmonious blend of technology and passion for the beautiful game.",
     tech: ["React", "React Router DOM", "Node.js", "MongoDB", "Tailwind CSS"],
     link: "http://fulltime-360.vercel.app/",
-    projectImage:"/360.JPG"
+    projectImage: "/360.JPG",
   },
   {
     projectName: "Tsavo",
@@ -32,7 +32,7 @@ export const Projects = [
       "UI/UX Design",
     ],
     link: "https://expo.dev/artifacts/eas/qoWCWj3eVcfTpjH7uUdNEa.apk",
-    projectImage:"/tsavo.jpg"
+    projectImage: "/tsavo.jpg",
   },
   {
     projectName: "ZaoKart Mobile App",
@@ -47,8 +47,8 @@ export const Projects = [
       "Node.js",
       "Express",
     ],
-    link: "http://fulltime-360.netlify.app/",
-    projectImage:""
+    link: "",
+    projectImage: "",
   },
   {
     projectName: "ZaoKart Website",
@@ -56,7 +56,7 @@ export const Projects = [
     projectDescription:
       "Designed and developed a dynamic web application using React that brings the same innovative concept to life. Through this platform, urban residents can securely order and receive fresh farm produce, while pickup stations strategically located within the city ensure seamless delivery. By leveraging React's powerful capabilities, I've created an intuitive and user-friendly interface that simplifies the ordering process. This web application harmonizes the convenience of online shopping with the satisfaction of accessing farm-fresh produce, enhancing urban dwellers' connection to locally sourced goods.",
     tech: ["React", "MongoDB", "Node.js", "Express"],
-    link: "http://fulltime-360.netlify.app/",
-    projectImage:""
+    link: "",
+    projectImage: "",
   },
 ];
