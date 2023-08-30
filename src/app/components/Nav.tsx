@@ -55,7 +55,12 @@ const Nav = () => {
                 setToggle(!toggle);
               }}
             >
-              <Link  className={`${theme === "dark" ? "text-white" : "text-black"}`} href={`/${nav.id}`}>{nav.title}</Link>
+              <Link
+                className={`${theme === "dark" ? "text-white" : "text-black"}`}
+                href={`/${nav.id}`}
+              >
+                {nav.title}
+              </Link>
             </div>
           ))}
         </div>
@@ -77,7 +82,7 @@ const Nav = () => {
           >
             <div className="list-none flex justify-end items-start flex-1 flex-col">
               {navLinks.map((nav, index) => (
-                <div
+                <Link
                   key={nav.id}
                   className={`w-full ${
                     theme === "dark" ? "text-white" : "text-black"
@@ -88,16 +93,23 @@ const Nav = () => {
                     setActive(nav.title);
                     setToggle(!toggle);
                   }}
+                  href={`/${nav.id}`}
                 >
-                  <Link className={`${theme === "dark" ? "text-white" : "text-black"}`} href={`/${nav.id}`}>{nav.title}</Link>
-                </div>
+                  <p
+                    className={`${
+                      theme === "dark" ? "text-white" : "text-black"
+                    }`}
+                  >
+                    {nav.title}
+                  </p>
+                </Link>
               ))}
             </div>
           </div>
         </div>
         {theme === "dark" ? (
           <FaSun
-          className="ml-4"
+            className="ml-4"
             size={24}
             onClick={() => {
               window.localStorage.setItem("theme", JSON.stringify("light"));
@@ -106,7 +118,7 @@ const Nav = () => {
           />
         ) : (
           <FaMoon
-          className="ml-4"
+            className="ml-4"
             size={24}
             onClick={() => {
               window.localStorage.setItem("theme", JSON.stringify("dark"));
