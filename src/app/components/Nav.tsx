@@ -55,7 +55,7 @@ const Nav = () => {
                 setToggle(!toggle);
               }}
             >
-              <Link href={`/${nav.id}`}>{nav.title}</Link>
+              <Link  className={`${theme === "dark" ? "text-white" : "text-black"}`} href={`/${nav.id}`}>{nav.title}</Link>
             </div>
           ))}
         </div>
@@ -65,7 +65,7 @@ const Nav = () => {
           <FaBars
             // src={toggle ? close : menu}
             alt="menu"
-            className="w-[28px] h-[28px] object-contain mr-4"
+            className="w-[28px] h-[28px] object-contain"
             onClick={() => setToggle(!toggle)}
           />
 
@@ -79,7 +79,7 @@ const Nav = () => {
               {navLinks.map((nav, index) => (
                 <div
                   key={nav.id}
-                  className={`${
+                  className={`w-full ${
                     theme === "dark" ? "text-white" : "text-black"
                   } font-poppins font-medium cursor-pointer text-[16px] ${
                     active === nav.title ? "text-white " : "text-gray-100"
@@ -89,7 +89,7 @@ const Nav = () => {
                     setToggle(!toggle);
                   }}
                 >
-                  <Link href={`/${nav.id}`}>{nav.title}</Link>
+                  <Link className={`${theme === "dark" ? "text-white" : "text-black"}`} href={`/${nav.id}`}>{nav.title}</Link>
                 </div>
               ))}
             </div>
@@ -97,6 +97,7 @@ const Nav = () => {
         </div>
         {theme === "dark" ? (
           <FaSun
+          className="ml-4"
             size={24}
             onClick={() => {
               window.localStorage.setItem("theme", JSON.stringify("light"));
@@ -105,6 +106,7 @@ const Nav = () => {
           />
         ) : (
           <FaMoon
+          className="ml-4"
             size={24}
             onClick={() => {
               window.localStorage.setItem("theme", JSON.stringify("dark"));
