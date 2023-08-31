@@ -27,7 +27,7 @@ const ContactForm = () => {
         throw Error(data.error);
       }
       toast.success(data.message);
-      console.log(data);
+      // console.log(data);
     } catch (error) {
       setLoading(false);
       console.log(error);
