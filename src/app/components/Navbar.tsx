@@ -11,7 +11,6 @@ const Navbar = () => {
 
   const { theme, updateTheme } = useTheme();
 
-  
   return (
     <div>
       <div className="flex justify-between items-center p-6 gap-4">
