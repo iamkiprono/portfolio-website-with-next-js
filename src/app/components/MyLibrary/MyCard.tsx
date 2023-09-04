@@ -18,7 +18,7 @@ const MyCard = ({ project }: { project: Projectprops }) => {
 
   return (
     <>
-      <div className="w-[350px] bg-[#222121] p-2">
+      <div className="w-[350px] p-2">
         <Image
           className="object-cover aspect-video"
           src="/project.png"
