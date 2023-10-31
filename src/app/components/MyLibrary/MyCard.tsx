@@ -11,6 +11,7 @@ type Projectprops = {
   projectType: string;
   link: string;
   tech: string[];
+  projectImage: string;
 };
 
 const MyCard = ({ project }: { project: Projectprops }) => {
@@ -21,10 +22,10 @@ const MyCard = ({ project }: { project: Projectprops }) => {
       <div className="w-[350px] p-2">
         <Image
           className="object-cover aspect-video"
-          src="/project.png"
+          src={project.projectImage ? project.projectImage : "/comingsoon.avif"}
           width={500}
           height={500}
-          alt="Picture of the author"
+          alt={project.projectName}
         />
         <p className="font-bold text-lg mt-4">{project.projectName}</p>
         <p className="">

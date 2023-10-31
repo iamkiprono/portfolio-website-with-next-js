@@ -10,7 +10,7 @@ const App = () => {
         <p className="text-3xl mb-12">Full Stack Software Engineer</p>
         <p className="text-xl mb-12">Nairobi, Kenya</p>
 
-        <Link href={""}>
+        <Link href={"/KIPRONO COLLINS CV.pdf"}>
           <MyButton title="Resume" />
         </Link>
       </div>
