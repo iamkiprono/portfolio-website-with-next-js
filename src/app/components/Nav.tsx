@@ -37,7 +37,7 @@ const Nav = () => {
       <nav className="max-w-7xl m-auto flex p-6 justify-between items-center navbar ">
         {/* Logo */}
         <Link className="" href={"/"}>
-          <MyButton title="Collins" />
+          <MyButton title="Collins Kiprono" />
         </Link>
 
         {/* Desktop Navigation */}
