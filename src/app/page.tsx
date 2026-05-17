@@ -1,21 +1,36 @@
 import React from "react";
-import MyButton from "./components/MyLibrary/MyButton";
+import { Button } from "@/components/ui/button";
 import Link from "next/link";
+import { ArrowRight, Download } from "lucide-react";
 
-const App = () => {
+export default function Home() {
   return (
-    <div>
-      <div className="p-6">
-        <p className="text-5xl font-bold my-12">Kiprono Collins</p>
-        <p className="text-3xl mb-12">Full Stack Software Engineer</p>
-        <p className="text-xl mb-12">Nairobi, Kenya</p>
-
-        <Link target="_blank" href={"/KIPRONO COLLINS CV.pdf"}>
-          <MyButton title="Resume" />
-        </Link>
+    <div className="flex flex-col items-center justify-center min-h-[calc(100vh-80px)] px-6 text-center">
+      <div className="max-w-3xl space-y-6">
+        <h1 className="text-4xl sm:text-6xl font-extrabold tracking-tight">
+          Hi, I&apos;m <span className="text-primary">Kiprono Collins</span>
+        </h1>
+        <p className="text-xl sm:text-2xl text-muted-foreground">
+          Full Stack Software Engineer
+        </p>
+        <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
+          I build robust, scalable, and user-centric web applications. Based in Nairobi, Kenya, 
+          dedicated to crafting clean code and exceptional digital experiences.
+        </p>
+        
+        <div className="flex flex-wrap items-center justify-center gap-4 pt-4">
+          <Button asChild size="lg" className="rounded-full">
+            <Link href="/projects">
+              View My Work <ArrowRight className="ml-2 h-4 w-4" />
+            </Link>
+          </Button>
+          <Button asChild variant="outline" size="lg" className="rounded-full">
+            <Link target="_blank" href="/Collins Kiprono Resume.pdf">
+              Download CV <Download className="ml-2 h-4 w-4" />
+            </Link>
+          </Button>
+        </div>
       </div>
     </div>
   );
-};
-
-export default App;
+}

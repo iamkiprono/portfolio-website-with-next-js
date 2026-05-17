@@ -80,7 +80,7 @@ export const Projects = [
       "Crafted a modern and responsive landing page for CocoMerchants, a rental and accommodation platform. The landing page highlights the platform’s unique value proposition, making it easier for property owners and renters to connect. Emphasizing clean UI/UX, fast load times, and mobile responsiveness, the landing page acts as a compelling entry point for prospective users and investors.",
     tech: ["Next.js", "Expo", "Tailwind CSS", "PostgreSQL", "Node.js", "Express",  "Vercel"],
     link: "https://www.cocomerchants.com/",
-    projectImage: "/coco .png",
+    projectImage: "/coco.png",
   },
 
   // New project 3: Rent-Cars

@@ -1,19 +1,15 @@
 import "./globals.css";
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
-import Navbar from "./components/Navbar";
-
-import { ThemeContextProvider } from "@/context/ThemeContext";
-
-import Footer from "./components/Footer";
-import ThemeComponent from "./components/ThemeComponent";
-import Nav from "./components/Nav";
+import Nav from "@/components/Nav";
+import Footer from "@/components/Footer";
+import { ThemeProvider } from "@/components/theme-provider";
 
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Kiprono Collins",
-  description: "Personal Web Portfolio",
+  title: "Kiprono Collins | Full Stack Engineer",
+  description: "Personal Web Portfolio of Kiprono Collins, a Full Stack Software Engineer based in Nairobi, Kenya.",
 };
 
 export default function RootLayout({
@@ -22,16 +18,22 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en">
-      <body>
-        <ThemeContextProvider>
-          <ThemeComponent>
+    <html lang="en" suppressHydrationWarning>
+      <body className={inter.className}>
+        <ThemeProvider
+          attribute="class"
+          defaultTheme="system"
+          enableSystem
+          disableTransitionOnChange
+        >
+          <div className="relative min-h-screen flex flex-col">
             <Nav />
-            {/* <Navbar /> */}
-            {children}
+            <main className="flex-1">
+              {children}
+            </main>
             <Footer />
-          </ThemeComponent>
-        </ThemeContextProvider>
+          </div>
+        </ThemeProvider>
       </body>
     </html>
   );
