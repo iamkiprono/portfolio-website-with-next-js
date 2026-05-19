@@ -88,17 +88,18 @@ export const Projects = [
   // },
 
   // New project 1: Juza SMS
-  {
-    slug: "juza-sms",
-    projectName: "Juza SMS",
-    projectType: "Website",
-    projectDescription:
-      "Juza is a bulk SMS platform built with Next.js that empowers users to send SMS messages using their device's native SMS plan. This project focuses on cost-effectiveness and privacy by leveraging the user’s device for message dispatch, eliminating the need for third-party APIs. With a sleek, responsive interface, users can import contacts, compose bulk messages, and view delivery logs seamlessly. Ideal for small businesses and event organizers, Juza simplifies communication without additional costs.",
-    tech: ["Next.js", "Tailwind CSS", "JavaScript", "PWA", "Device API Integration"],
-    link: "http://juza.kiprono.site/",
-    projectImage: "/juza.png",
-  },
+ 
 
+  {
+    slug: "renty-cars",
+    projectName: "Renty-Cars",
+    projectType: "Cross platform mobile applicaion",
+    projectDescription:
+      "Renty-Cars is a cross-platform mobile app built to connect vehicle owners with individuals seeking to rent cars. The app provides detailed listings, real-time booking, and secure user authentication to ensure trust between both parties. Users can view available vehicles nearby, filter by type and price, and proceed to book a ride with ease. Designed with React Native and powered by an efficient backend, Renty-Cars modernizes peer-to-peer car rentals.",
+    tech: ["Next.js", "Expo", "Tailwind CSS", "PostgreSQL", "Node.js", "Express"],
+    link: "http://rent-cars.kiprono.site/",
+    projectImage: "/rent.png",
+  },
   // New project 2: CocoMerchants Landing Page
   {
     slug: "cocomercants",
@@ -111,15 +112,15 @@ export const Projects = [
     projectImage: "/coco.png",
   },
 
-  // New project 3: Rent-Cars
-  {
-    slug: "rent-cars",
-    projectName: "Rent-Cars",
-    projectType: "Cross platform mobile applicaion",
+  // New project 3: Renty-Cars
+   {
+    slug: "juza-sms",
+    projectName: "Juza SMS",
+    projectType: "Website",
     projectDescription:
-      "Rent-Cars is a cross-platform mobile app built to connect vehicle owners with individuals seeking to rent cars. The app provides detailed listings, real-time booking, and secure user authentication to ensure trust between both parties. Users can view available vehicles nearby, filter by type and price, and proceed to book a ride with ease. Designed with React Native and powered by an efficient backend, Rent-Cars modernizes peer-to-peer car rentals.",
-    tech: ["Next.js", "Expo", "Tailwind CSS", "PostgreSQL", "Node.js", "Express"],
-    link: "http://rent-cars.kiprono.site/",
-    projectImage: "/rent.png",
-  },
+      "Juza is a bulk SMS platform built with Next.js that empowers users to send SMS messages using their device's native SMS plan. This project focuses on cost-effectiveness and privacy by leveraging the user’s device for message dispatch, eliminating the need for third-party APIs. With a sleek, responsive interface, users can import contacts, compose bulk messages, and view delivery logs seamlessly. Ideal for small businesses and event organizers, Juza simplifies communication without additional costs.",
+    tech: ["Next.js", "Tailwind CSS", "JavaScript", "PWA", "Device API Integration"],
+    link: "http://juza.kiprono.site/",
+    projectImage: "/juza.png",
+  }
 ];
