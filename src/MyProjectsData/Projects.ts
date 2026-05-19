@@ -1,6 +1,7 @@
 export const Projects = [
   // FarmPay — first project (private client system)
   {
+    slug: "farmpay",
     projectName: "FarmPay",
     projectType: "Web Application",
     projectDescription:
@@ -13,6 +14,7 @@ export const Projects = [
 
   // FlexPenge — mobile money & marketplace app
   {
+    slug: "flexpenge",
     projectName: "FlexPenge",
     projectType: "Cross-platform Mobile Application",
     projectDescription:
@@ -87,6 +89,7 @@ export const Projects = [
 
   // New project 1: Juza SMS
   {
+    slug: "juza-sms",
     projectName: "Juza SMS",
     projectType: "Website",
     projectDescription:
@@ -98,6 +101,7 @@ export const Projects = [
 
   // New project 2: CocoMerchants Landing Page
   {
+    slug: "cocomercants",
     projectName: "CocoMerchants",
     projectType: "Landing Page",
     projectDescription:
@@ -109,6 +113,7 @@ export const Projects = [
 
   // New project 3: Rent-Cars
   {
+    slug: "rent-cars",
     projectName: "Rent-Cars",
     projectType: "Cross platform mobile applicaion",
     projectDescription:

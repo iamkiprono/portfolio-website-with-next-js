@@ -7,11 +7,9 @@ import {
   CardHeader,
   CardTitle,
 } from "@/components/ui/card";
-import { Button } from "@/components/ui/button";
-import { ExternalLink } from "lucide-react";
+import { ArrowRight } from "lucide-react";
 import Link from "next/link";
 import Image from "next/image";
-import ProjectDescription from "@/components/ProjectDescription";
 
 export default function ProjectsPage() {
   return (
@@ -25,56 +23,52 @@ export default function ProjectsPage() {
 
       <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
         {Projects.map((project, index) => (
-          <Card key={index} className="flex flex-col overflow-hidden border-muted-foreground/20">
-            <div className="relative aspect-video overflow-hidden">
-              {project.projectImage ? (
-                <Image
-                  src={project.projectImage}
-                  alt={project.projectName}
-                  fill
-                  className="object-cover transition-transform hover:scale-105"
-                />
-              ) : (
-                <div className="w-full h-full bg-muted flex items-center justify-center">
-                  <span className="text-muted-foreground">No Image</span>
-                </div>
-              )}
-            </div>
-            <CardHeader>
-              <div className="flex justify-between items-start">
-                <CardTitle>{project.projectName}</CardTitle>
-                <span className="text-xs font-medium px-2 py-1 rounded-full bg-secondary text-secondary-foreground">
-                  {project.projectType}
-                </span>
+          <Link key={index} href={`/projects/${project.slug}`} className="group block">
+            <Card className="flex flex-col overflow-hidden border-muted-foreground/20 h-full transition-shadow group-hover:shadow-lg">
+              <div className="relative aspect-video overflow-hidden">
+                {project.projectImage ? (
+                  <Image
+                    src={project.projectImage}
+                    alt={project.projectName}
+                    fill
+                    className="object-cover transition-transform duration-300 group-hover:scale-105"
+                  />
+                ) : (
+                  <div className="w-full h-full bg-muted flex items-center justify-center">
+                    <span className="text-muted-foreground">No Image</span>
+                  </div>
+                )}
               </div>
-              <ProjectDescription text={project.projectDescription} />
-            </CardHeader>
-            <CardContent className="flex-1">
-              <div className="flex flex-wrap gap-2">
-                {project.tech.map((tech) => (
-                  <span
-                    key={tech}
-                    className="text-[10px] uppercase tracking-wider font-semibold text-muted-foreground"
-                  >
-                    {tech}
+              <CardHeader>
+                <div className="flex justify-between items-start gap-2">
+                  <CardTitle className="text-base leading-snug">{project.projectName}</CardTitle>
+                  <span className="shrink-0 text-xs font-medium px-2 py-1 rounded-full bg-secondary text-secondary-foreground">
+                    {project.projectType}
                   </span>
-                ))}
-              </div>
-            </CardContent>
-            <CardFooter className="pt-4 border-t gap-2">
-              {project.link ? (
-                <Button asChild size="sm" variant="outline" className="w-full">
-                  <Link href={project.link} target="_blank">
-                    <ExternalLink className="mr-2 h-4 w-4" /> Live Demo
-                  </Link>
-                </Button>
-              ) : (
-                <span className="text-xs text-muted-foreground italic">
-                  {project.status ?? "Private client system — not publicly available"}
+                </div>
+                <p className="text-sm text-muted-foreground line-clamp-3 mt-1">
+                  {project.projectDescription}
+                </p>
+              </CardHeader>
+              <CardContent className="flex-1">
+                <div className="flex flex-wrap gap-2">
+                  {project.tech.map((tech) => (
+                    <span
+                      key={tech}
+                      className="text-[10px] uppercase tracking-wider font-semibold text-muted-foreground"
+                    >
+                      {tech}
+                    </span>
+                  ))}
+                </div>
+              </CardContent>
+              <CardFooter className="pt-4 border-t">
+                <span className="flex items-center gap-1 text-sm font-medium text-foreground/70 group-hover:text-foreground transition-colors">
+                  View details <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" />
                 </span>
-              )}
-            </CardFooter>
-          </Card>
+              </CardFooter>
+            </Card>
+          </Link>
         ))}
       </div>
     </div>
