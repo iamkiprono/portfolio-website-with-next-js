@@ -1,4 +1,28 @@
 export const Projects = [
+  // FarmPay — first project (private client system)
+  {
+    projectName: "FarmPay",
+    projectType: "Web Application",
+    projectDescription:
+      "FarmPay is a custom-built internal management system developed for a farming cooperative client. The platform automates payment tracking by parsing M-Pesa SMS messages to extract and record farmer transactions, eliminating manual data entry. It features a centralized farmer registry, payment assignment and reconciliation tools, monthly water meter reading management, and Excel report exports. Built with Next.js, PostgreSQL, and Prisma, the system provides an intuitive admin dashboard with real-time statistics on total collections, outstanding payments, and per-farmer transaction history.",
+    tech: ["Next.js", "TypeScript", "PostgreSQL", "Prisma", "Tailwind CSS", "M-Pesa Integration", "ExcelJS"],
+    link: "",
+    status: "Private client system — not publicly available",
+    projectImage: "/FarmPay.png",
+  },
+
+  // FlexPenge — mobile money & marketplace app
+  {
+    projectName: "FlexPenge",
+    projectType: "Cross-platform Mobile Application",
+    projectDescription:
+      "FlexPenge is a mobile money and local commerce application built with React Native and Expo. Users can send money peer-to-peer using phone numbers or by scanning QR codes, deposit funds via M-Pesa STK push with real-time status polling, and manage withdrawals — all secured with OTP-based authentication. The app also features a location-aware marketplace where users can create and browse item listings pinned to a map. Built with NativeWind for a polished, responsive UI and Expo Router for seamless file-based navigation.",
+    tech: ["React Native", "Expo", "NativeWind", "TypeScript", "Expo Router", "M-Pesa Integration", "react-native-maps"],
+    link: "",
+    status: "In development — not yet publicly available",
+    projectImage: "/FlexPenge.png",
+  },
+
   // Existing projects...
   // {
   //   projectName: "Nayvy",
@@ -79,7 +103,7 @@ export const Projects = [
     projectDescription:
       "Crafted a modern and responsive landing page for CocoMerchants, a rental and accommodation platform. The landing page highlights the platform’s unique value proposition, making it easier for property owners and renters to connect. Emphasizing clean UI/UX, fast load times, and mobile responsiveness, the landing page acts as a compelling entry point for prospective users and investors.",
     tech: ["Next.js", "Expo", "Tailwind CSS", "PostgreSQL", "Node.js", "Express",  "Vercel"],
-    link: "https://www.cocomerchants.com/",
+    link: "https://coco-merchants.vercel.app/",
     projectImage: "/coco.png",
   },
 

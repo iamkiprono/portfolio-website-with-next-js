@@ -3,15 +3,15 @@ import { Projects } from "@/MyProjectsData/Projects";
 import {
   Card,
   CardContent,
-  CardDescription,
   CardFooter,
   CardHeader,
   CardTitle,
 } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { ExternalLink, Github } from "lucide-react";
+import { ExternalLink } from "lucide-react";
 import Link from "next/link";
 import Image from "next/image";
+import ProjectDescription from "@/components/ProjectDescription";
 
 export default function ProjectsPage() {
   return (
@@ -47,9 +47,7 @@ export default function ProjectsPage() {
                   {project.projectType}
                 </span>
               </div>
-              <CardDescription className="line-clamp-2">
-                {project.projectDescription}
-              </CardDescription>
+              <ProjectDescription text={project.projectDescription} />
             </CardHeader>
             <CardContent className="flex-1">
               <div className="flex flex-wrap gap-2">
@@ -64,14 +62,17 @@ export default function ProjectsPage() {
               </div>
             </CardContent>
             <CardFooter className="pt-4 border-t gap-2">
-              {project.link && (
+              {project.link ? (
                 <Button asChild size="sm" variant="outline" className="w-full">
                   <Link href={project.link} target="_blank">
                     <ExternalLink className="mr-2 h-4 w-4" /> Live Demo
                   </Link>
                 </Button>
+              ) : (
+                <span className="text-xs text-muted-foreground italic">
+                  {project.status ?? "Private client system — not publicly available"}
+                </span>
               )}
-              {/* Optional: Add Github link if available in data */}
             </CardFooter>
           </Card>
         ))}
