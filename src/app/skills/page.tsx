@@ -25,11 +25,11 @@ const techSkills = [
   },
   {
     category: "Search & AI",
-    skills: ["Elasticsearch", "Meilisearch", "OpenAI API", "LangChain"],
+    skills: ["Elasticsearch", "Meilisearch", "OpenAI API", "LangChain", "Claude Code", "Gemini", "Cursor"],
   },
   {
     category: "DevOps & Infrastructure",
-    skills: ["Docker", "Nginx", "PM2", "Linux", "GitHub Actions", "Git"],
+    skills: ["Docker", "Nginx", "PM2", "Linux", "GitHub Actions", "Git", "AWS"],
   },
   {
     category: "Integrations & Services",
