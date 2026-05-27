@@ -3,9 +3,38 @@ import { Badge } from "@/components/ui/badge";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 
 const techSkills = [
-  { category: "Frontend", skills: ["Next.js", "React", "React Native", "TypeScript", "JavaScript", "HTML", "CSS", "TailwindCSS"] },
-  { category: "Backend", skills: ["Node.js", "Express.js", "MySQL", "MongoDB", "PostgreSQL"] },
-  { category: "Tools", skills: ["Git", "GitHub", "Vercel", "Expo", "Adobe XD", "Figma"] },
+  {
+    category: "Languages",
+    skills: ["TypeScript", "JavaScript"],
+  },
+  {
+    category: "Frontend",
+    skills: ["Next.js", "React", "Tailwind CSS", "Shadcn UI", "Redux Toolkit", "React Query"],
+  },
+  {
+    category: "Mobile",
+    skills: ["React Native", "Expo"],
+  },
+  {
+    category: "Backend",
+    skills: ["Node.js", "Express", "NestJS", "Java Spring Boot", "Django"],
+  },
+  {
+    category: "Databases & Storage",
+    skills: ["PostgreSQL", "MySQL", "Redis", "Firebase", "Prisma", "Sequelize"],
+  },
+  {
+    category: "Search & AI",
+    skills: ["Elasticsearch", "Meilisearch", "OpenAI API", "LangChain"],
+  },
+  {
+    category: "DevOps & Infrastructure",
+    skills: ["Docker", "Nginx", "PM2", "Linux", "GitHub Actions", "Git"],
+  },
+  {
+    category: "Integrations & Services",
+    skills: ["JWT", "Socket.IO", "Dynamics 365 Business Central"],
+  },
 ];
 
 export default function SkillsPage() {
